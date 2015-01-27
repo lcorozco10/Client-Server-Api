@@ -5,19 +5,27 @@ include 'Modelo.php';
  *
  */
 class Controlador {
-	// TODO - Insert your code here
-
 	/**
 	 */
 	function __construct() {
 
-		// TODO - Insert your code here
 	}
 }
 if( !empty( $_POST ) ){
+	if($_POST["accion"] == "Guardar")
+	{
+		$modelo = new Modelo();
+		$modelo->Setquery($_POST["firstName"], $_POST["lastName"], $_POST["dateOfBirth"], $_POST["gender"], $_POST["ocupacion"],$_POST["email"], $_POST["phone"]);
+		header("Location:index.php");
 
-	$modelo = new Modelo();
-	$modelo->Setquery($_POST["firstName"], $_POST["lastName"], $_POST["dateOfBirth"], $_POST["gender"], $_POST["ocupacion"],$_POST["email"], $_POST["phone"]);
-	$modelo->Getquery("SELECT * FROM user LIMIT 10");
+	}
+}
+if( !empty( $_GET ) ){
+	if($_GET["accion"]== "Obtener")
+	{
+		header('Content-type: application/json');
+		$modelo = new Modelo();
+		$modelo->Getquery("SELECT * FROM user LIMIT 10");
+	}
 }
 ?>

@@ -44,6 +44,7 @@
 						<!-- <label class="col-xs-6"></label>
 						<input class="col-xs-6" type="text" name="phone[]" placeholder="Phone"> -->
 
+						<input hidden="" name="accion" value="Guardar">
 						<div class="col-xs-12"></div>
 						<div class="col-xs-6"></div><input class="col-xs-6"  type="submit" value="Guardar">
 					</fieldset>
