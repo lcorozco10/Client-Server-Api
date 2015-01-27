@@ -1,5 +1,5 @@
 <?php
-
+include 'Modelo.php';
 /**
  * @author Luis Orozco----lcorozco10
  *
@@ -15,6 +15,9 @@ class Controlador {
 	}
 }
 if( !empty( $_POST ) ){
- echo json_encode($_POST);
+
+	$modelo = new Modelo();
+	$modelo->Setquery($_POST["firstName"], $_POST["lastName"], $_POST["dateOfBirth"], $_POST["gender"], $_POST["ocupacion"],$_POST["email"], $_POST["phone"]);
+	$modelo->Getquery("SELECT * FROM user LIMIT 10");
 }
 ?>

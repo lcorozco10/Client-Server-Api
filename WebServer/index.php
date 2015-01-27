@@ -17,26 +17,26 @@
 					<fieldset name="userform">
 						<legend class="col-xs-12">Ejercicio Registro de Usuario</legend>
 						<label class="col-xs-6">Nombre:</label>
-						<input class="col-xs-6" type="text" name="firstName" placeholder="Nombre">
+						<input class="col-xs-6" type="text" name="firstName" placeholder="Nombre" required="required">
 						<label class="col-xs-6">Apellido:</label>
-						<input class="col-xs-6" type="text" name="lastName" placeholder="Apellido">
+						<input class="col-xs-6" type="text" name="lastName" placeholder="Apellido" required="required">
 						<label class="col-xs-6">Fecha de Nac:</label>
-						<input class="col-xs-6" type="text" name="dateOfBirth" placeholder="Fecha de Nac">
+						<input class="col-xs-6" type="text" name="dateOfBirth" placeholder="Fecha de Nac" required="required">
 
 						<label class="col-xs-6">Genero:</label>
 						<div class="col-xs-6">
 							<label class="col-xs-3">M</label>
-							<input class="col-xs-3" type="radio" value="Masculino" name="gender">
+							<input class="col-xs-3" type="radio" checked="checked" value="Masculino" name="gender">
 							<label class="col-xs-3">F</label>
 							<input class="col-xs-3" type="radio" value="Femenino" name="gender">
 						</div>
 
 						<label class="col-xs-6">Ocupacion:</label>
-						<input class="col-xs-6" type="text" name="ocupacion" placeholder="Ocupacion">
+						<input class="col-xs-6" type="text" name="ocupacion" placeholder="Ocupacion" required="required">
 						<label class="col-xs-6">Email:</label>
-						<input class="col-xs-6" type="text" name="email" placeholder="Email">
+						<input class="col-xs-6" type="text" name="email" placeholder="Email" required="required">
 						<label class="col-xs-6">Phone:</label>
-						<input class="col-xs-5" type="text" name="phone[]" placeholder="Phone">
+						<input class="col-xs-5" type="text" name="phone" placeholder="Phone" required="required">
 
 
 						<a class="col-xs-1 btn btn-default fa fa-plus-square" href="#" role="button"></a>
@@ -54,4 +54,4 @@
 	</div>
 </body>
 </html>
-<?php ?>
+
