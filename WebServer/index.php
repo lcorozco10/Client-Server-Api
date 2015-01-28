@@ -21,7 +21,7 @@
 						<label class="col-xs-6">Apellido:</label>
 						<input class="col-xs-6" type="text" name="lastName" placeholder="Apellido" required="required">
 						<label class="col-xs-6">Fecha de Nac:</label>
-						<input class="col-xs-6" type="text" name="dateOfBirth" placeholder="Fecha de Nac" required="required">
+						<input class="col-xs-6" type="text" name="dateOfBirth" placeholder="formato 2015-12-16" required="required">
 
 						<label class="col-xs-6">Genero:</label>
 						<div class="col-xs-6">
@@ -36,17 +36,17 @@
 						<label class="col-xs-6">Email:</label>
 						<input class="col-xs-6" type="text" name="email" placeholder="Email" required="required">
 						<label class="col-xs-6">Phone:</label>
-						<input class="col-xs-5" type="text" name="phone" placeholder="Phone" required="required">
+						<input class="col-xs-6" type="text" name="phone" placeholder="Phone" required="required">
 
 
 
-						<a class="col-xs-1 btn btn-default fa fa-plus-square" href="#" role="button"></a>
+
 						<label class="col-xs-6">Edad:</label>
 						<input class="col-xs-6" type="text" name="age" placeholder="Edad" required="required">
 						<!-- <label class="col-xs-6"></label>
 						<input class="col-xs-6" type="text" name="phone[]" placeholder="Phone"> -->
 
-						<input hidden="" name="accion" value="Guardar">
+						<input hidden="" name="action" value="save">
 						<div class="col-xs-12"></div>
 						<div class="col-xs-6"></div><input class="col-xs-6"  type="submit" value="Guardar">
 					</fieldset>

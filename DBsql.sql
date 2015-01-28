@@ -18,30 +18,6 @@ USE `bdexercise`;
 /*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
 
 --
--- Table structure for table `phone`
---
-
-DROP TABLE IF EXISTS `phone`;
-/*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!40101 SET character_set_client = utf8 */;
-CREATE TABLE `phone` (
-  `idphone` int(11) NOT NULL AUTO_INCREMENT,
-  `phone_number` varchar(45) DEFAULT NULL,
-  `iduser` int(11) DEFAULT NULL,
-  PRIMARY KEY (`idphone`)
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
-/*!40101 SET character_set_client = @saved_cs_client */;
-
---
--- Dumping data for table `phone`
---
-
-LOCK TABLES `phone` WRITE;
-/*!40000 ALTER TABLE `phone` DISABLE KEYS */;
-/*!40000 ALTER TABLE `phone` ENABLE KEYS */;
-UNLOCK TABLES;
-
---
 -- Table structure for table `user`
 --
 
@@ -59,7 +35,7 @@ CREATE TABLE `user` (
   `phone` varchar(50) DEFAULT NULL,
   `age` int(11) DEFAULT NULL,
   PRIMARY KEY (`idUser`)
-) ENGINE=InnoDB AUTO_INCREMENT=12 DEFAULT CHARSET=big5;
+) ENGINE=InnoDB AUTO_INCREMENT=17 DEFAULT CHARSET=big5;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -68,7 +44,7 @@ CREATE TABLE `user` (
 
 LOCK TABLES `user` WRITE;
 /*!40000 ALTER TABLE `user` DISABLE KEYS */;
-INSERT INTO `user` VALUES (7,'Nombre','Apellido','2010-10-15','Masculino','ocpacion','lcorozco10@gmail.com','10015578',NULL),(8,'Nombre','Apellido','2010-10-15','Masculino','ocpacion','lcorozco10@gmail.com','10015578',NULL),(9,'Nombre','Apellido','2010-10-15','Masculino','ocpacion','lcorozco10@gmail.com','10015578',18),(10,'Nombre','Apellido','2010-10-15','Masculino','ocpacion','lcorozco10@gmail.com','10015578',18),(11,'Nombre','Apellido','2010-10-15','Masculino','ocpacion','lcorozco10@gmail.com','10015578',18);
+INSERT INTO `user` VALUES (12,'Andres','Cuadra','2010-10-15','Masculino','Analista','jose@nicaragua.com','34679423',25),(13,'Martin','Gomez','2001-06-07','Masculino','Ingeniero','martin@yahoo.com','25788958',35),(14,'Maria','Hernandez','1990-08-03','Femenino','Abogada','maria@gmail.com','84841574',26),(15,'Fatima','Orozco','2015-05-25','Femenino','Doctor','fatima@casa.com','34567643',34),(16,'Pablo','Velasquez','1998-01-20','Masculino','Estudiante','palo@student.com','15884758',18);
 /*!40000 ALTER TABLE `user` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -81,4 +57,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2015-01-27 18:03:49
+-- Dump completed on 2015-01-28 10:16:15

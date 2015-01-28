@@ -18,6 +18,7 @@ class Modelo {
 	 *Contructor que inicializa la conección con la base de datos
 	 */
 	function __construct() {
+		//conección a la base de datos
 		$this->conn = new mysqli($this->servername, $this->username, $this->password,$this->database);
 		if ($this->conn->connect_error) {
 			die("Coneccion Fallada: " . $conn->connect_error);
