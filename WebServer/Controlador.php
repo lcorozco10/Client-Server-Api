@@ -16,19 +16,18 @@ if( !empty( $_POST ) ){
 if( !empty( $_GET ) ){
 	if($_GET["accion"] == "obtener")
 	{
-		$query = "SELECT * FROM bdexercise.user where ";
+		$query = "SELECT * FROM user where ";
 
 		if ($_GET["by"] == "name"):
-			$by = "first_name like '%N%'" ;
+			$by = "first_name like '%".$_GET["value"]."%'" ;
 		elseif ($_GET["by"] == "gender"):
-			$by = "gender = 'Masculino'";
+			$by = "gender = '".$_GET["value"]."'";
 		elseif ($_GET["by"] == "age"):
-			$by = "age = '18'";
+			$by = "age = '".$_GET["value"]."'";
 		endif;
 
 		header('Content-type: application/json');
 		$modelo = new Modelo();
 		echo json_encode($modelo->Getquery($query.$by));
-	}
 }
 ?>
