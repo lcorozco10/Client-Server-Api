@@ -9,7 +9,7 @@ if( !empty( $_POST ) ){
 	{
 		$modelo = new Modelo();
 		$modelo->Setquery($_POST["firstName"], $_POST["lastName"], $_POST["dateOfBirth"], $_POST["gender"], $_POST["ocupacion"],$_POST["email"], $_POST["phone"],$_POST["age"]);
-		//header("Location:index.php");
+		header("Location:index.php");
 	}
 }
 
