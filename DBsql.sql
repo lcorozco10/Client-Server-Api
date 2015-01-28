@@ -56,9 +56,10 @@ CREATE TABLE `user` (
   `gender` varchar(45) DEFAULT NULL,
   `occupation` varchar(50) DEFAULT NULL,
   `email` varchar(80) DEFAULT NULL,
-  `id_phone` varchar(50) DEFAULT NULL,
+  `phone` varchar(50) DEFAULT NULL,
+  `age` int(11) DEFAULT NULL,
   PRIMARY KEY (`idUser`)
-) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=big5;
+) ENGINE=InnoDB AUTO_INCREMENT=12 DEFAULT CHARSET=big5;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -67,7 +68,7 @@ CREATE TABLE `user` (
 
 LOCK TABLES `user` WRITE;
 /*!40000 ALTER TABLE `user` DISABLE KEYS */;
-INSERT INTO `user` VALUES (1,'Luis','Orozco','0000-00-00','Masculino','Ing','lcorozco10@gmail.com','1'),(2,'Pedro','Fernandez','2014-10-10','Masculino','Lic','Close@fdd.com','2'),(3,'Jose','Gomez','2014-10-10','Masculino','Programador','jose@kkk.com','1'),(4,'Nombre','Apellido','2010-10-15','Masculino','ocpacion','lcorozco10@gmail.com','10015578'),(5,'Nombre','Apellido','2010-10-15','Masculino','ocpacion','lcorozco10@gmail.com','10015578');
+INSERT INTO `user` VALUES (7,'Nombre','Apellido','2010-10-15','Masculino','ocpacion','lcorozco10@gmail.com','10015578',NULL),(8,'Nombre','Apellido','2010-10-15','Masculino','ocpacion','lcorozco10@gmail.com','10015578',NULL),(9,'Nombre','Apellido','2010-10-15','Masculino','ocpacion','lcorozco10@gmail.com','10015578',18),(10,'Nombre','Apellido','2010-10-15','Masculino','ocpacion','lcorozco10@gmail.com','10015578',18),(11,'Nombre','Apellido','2010-10-15','Masculino','ocpacion','lcorozco10@gmail.com','10015578',18);
 /*!40000 ALTER TABLE `user` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -80,4 +81,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2015-01-27 16:57:23
+-- Dump completed on 2015-01-27 18:03:49
