@@ -39,8 +39,10 @@
 						<input class="col-xs-5" type="text" name="phone" placeholder="Phone" required="required">
 
 
-						<a class="col-xs-1 btn btn-default fa fa-plus-square" href="#" role="button"></a>
 
+						<a class="col-xs-1 btn btn-default fa fa-plus-square" href="#" role="button"></a>
+						<label class="col-xs-6">Edad:</label>
+						<input class="col-xs-6" type="text" name="age" placeholder="Edad" required="required">
 						<!-- <label class="col-xs-6"></label>
 						<input class="col-xs-6" type="text" name="phone[]" placeholder="Phone"> -->
 
